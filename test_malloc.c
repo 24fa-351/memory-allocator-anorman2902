@@ -14,7 +14,7 @@ void test_malloc_and_free() {
     } else {
         printf("Failed to allocate 100 bytes\n");
     }
-    printf("\n"); // Add a newline for readability
+    printf("\n");
 }
 
 void test_realloc() {
@@ -34,7 +34,7 @@ void test_realloc() {
     } else {
         printf("Failed to allocate 50 bytes\n");
     }
-    printf("\n"); // Add a newline for readability
+    printf("\n");
 }
 
 void test_edge_cases() {
@@ -59,7 +59,7 @@ void test_edge_cases() {
     } else {
         printf("Failed: Too-large allocation returned non-NULL\n");
     }
-    printf("\n"); // Add a newline for readability
+    printf("\n");
 }
 
 void run_all_tests() {

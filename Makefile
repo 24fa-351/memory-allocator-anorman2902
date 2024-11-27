@@ -1,6 +1,7 @@
 # Compiler and flags
 CC = clang
-CFLAGS = -fcolor-diagnostics -fansi-escape-codes -g -Wall -mconsole
+CFLAGS = -fcolor-diagnostics -fansi-escape-codes -g -Wall
+LDFLAGS = -mconsole
 
 # Targets and source files
 TARGET = test_malloc
@@ -12,7 +13,7 @@ all: $(TARGET)
 
 # Link the object files into the final executable
 $(TARGET): $(OBJ)
-	$(CC) $(CFLAGS) -o $@ $^
+	$(CC) $(CFLAGS) $(LDFLAGS) -o $@ $^
 
 # Compile .c files into .o files
 %.o: %.c
